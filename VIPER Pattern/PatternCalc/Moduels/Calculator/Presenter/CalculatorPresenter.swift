@@ -17,7 +17,6 @@ class CalculatorPresenter: CalculatorViewOutput, CalculatorInteractorOutput{
     
     let zeroText = "0"
     let comma = ","
-    let alertErrorMessage = "Нельзя делить на ноль"
     var waitNewValue = false
     
     // MARK: - Calculator View Output Protocol
