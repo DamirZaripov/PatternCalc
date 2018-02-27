@@ -10,5 +10,4 @@ import Foundation
 
 protocol CalсulatorViewInput: class{
     func setTextToDigitsLabel(text: String)
-    func showErrorAlert(with message: String)
 }

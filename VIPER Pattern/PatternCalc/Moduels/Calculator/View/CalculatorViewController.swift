@@ -58,12 +58,5 @@ class CalculatorViewController: UIViewController, CalсulatorViewInput {
         digitsLabel.text = text
     }
     
-    func showErrorAlert(with message: String) {
-        let alert = UIAlertController(title: errorMessage, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: okeyMessage, style: .default, handler: nil)
-        alert.addAction(okAction)
-        self.present(alert, animated: true, completion: nil)
-    }
-    
 }
 

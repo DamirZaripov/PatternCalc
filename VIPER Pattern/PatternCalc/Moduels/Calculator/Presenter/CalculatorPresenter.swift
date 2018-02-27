@@ -17,6 +17,7 @@ class CalculatorPresenter: CalculatorViewOutput, CalculatorInteractorOutput{
     
     let zeroText = "0"
     let comma = ","
+    let point = "."
     var waitNewValue = false
     
     // MARK: - Calculator View Output Protocol
@@ -98,12 +99,12 @@ class CalculatorPresenter: CalculatorViewOutput, CalculatorInteractorOutput{
     }
     
     func toReplacmentCommaToPoint(from text: String) -> String {
-        let result = text.replacingOccurrences(of: ",", with: ".")
+        let result = text.replacingOccurrences(of: comma, with: point)
         return result
     }
     
     func toReplacmentPointToComma(from value: Double) -> String {
-        let result = String(value).replacingOccurrences(of: ".", with: ",")
+        let result = String(value).replacingOccurrences(of: comma, with: point)
         return result
     }
     

@@ -10,6 +10,5 @@ import Foundation
 import UIKit
 
 protocol CalculatorRouterProtocol: class{
-    
     func showAlert(alert: UIViewController)
 }
