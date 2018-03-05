@@ -58,7 +58,7 @@ class CalculatorPresenter: CalculatorViewPresenter {
         waitNewValue = true
         singleOperation.value = convertDigitsLabelToValue(from: digitsLabelText)
         singleOperation.singleOperation = SingleOperations(rawValue: operation)
-        guard let result = calculatorManager.toCount(with: singleOperation) else { return }
+        guard let result = calculatorManager.calculate(with: singleOperation) else { return }
         let stringResult = formatNumber(value: result)
         view.setTextToDigitsLabel(text: stringResult)
     }
@@ -69,14 +69,13 @@ class CalculatorPresenter: CalculatorViewPresenter {
         waitNewValue = true
     }
     
-    
     func onEqullyButtonPressed(value digitsLabelText: String) {
         if ((multiplayOperation.firstValue == nil) || (multiplayOperation.multiplayOperation == nil)) {
             waitNewValue = false
             return
         } else {
             multiplayOperation.secondValue = convertDigitsLabelToValue(from: digitsLabelText)
-            guard let result = calculatorManager.toCount(with: multiplayOperation)
+            guard let result = calculatorManager.calculate(with: multiplayOperation)
                 else { view.showErrorAlert(with: alertErrorMessage)
                     return
             }

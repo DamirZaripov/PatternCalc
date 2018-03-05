@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-
 class CalculatorConfigurator {
     
     static func setupModule() -> CalculatorViewController? {
+        
         let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calculatorView") as! CalculatorViewController
         
         let presenter = CalculatorPresenter()
@@ -25,11 +25,11 @@ class CalculatorConfigurator {
         presenter.view = viewController
         presenter.interactor = iteractor
         presenter.router = router
-        presenter.alertsFactory = alertFactory
         
         iteractor.presenter = presenter
         
         router.view = viewController
+        router.alertsFactory = alertFactory
         
         return viewController
     }

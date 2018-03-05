@@ -9,6 +9,6 @@
 import Foundation
 
 protocol CalculatorManagerProtocol {
-    func toCount(with operation: SingleOperation) -> Double?
-    func toCount(with operation: MultiplayOperation) -> Double?
+    func calculate(with operation: SingleOperation) -> Double?
+    func calculate(with operation: MultiplayOperation) -> Double?
 }

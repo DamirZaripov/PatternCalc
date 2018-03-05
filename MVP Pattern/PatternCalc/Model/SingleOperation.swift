@@ -8,11 +8,16 @@
 
 import Foundation
 
+/// A mathematical operation with one argument
 class SingleOperation {
     var value: Double?
     var singleOperation: SingleOperations?
 }
 
+/// Options for a SingleOperation
+///
+/// - percent: calculate the percentage
+/// - power: calculate the power
 enum SingleOperations: String {
     case percent = "%"
     case power = "x²"

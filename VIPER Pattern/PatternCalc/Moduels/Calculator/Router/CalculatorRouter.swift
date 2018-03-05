@@ -10,9 +10,13 @@ import Foundation
 import UIKit
 
 class CalculatorRouter: CalculatorRouterProtocol{
-    weak var view: UIViewController?
     
-    func showAlert(alert: UIViewController) {
-        view?.present(alert, animated: true, completion: nil)
+    weak var view: UIViewController!
+    var alertsFactory: AlertsFactoryProtocol!
+    
+    func showErrorAlert(with message: String) {
+        let errorAlert = alertsFactory.getErrorAlert(with: message)
+        view.present(errorAlert, animated: true, completion: nil)
     }
+    
 }

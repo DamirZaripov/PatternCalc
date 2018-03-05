@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-class CalculatorRouter {
+/// Initializing classes and introducing dependencies
+class CalculatorСonfigurator {
     
-    static func setupModule() -> CalculatorViewController? {
+    static func configureModule() -> UIViewController? {
         let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calculatorView") as! CalculatorViewController
         
         let presenter = CalculatorPresenter(calculatorView: viewController)

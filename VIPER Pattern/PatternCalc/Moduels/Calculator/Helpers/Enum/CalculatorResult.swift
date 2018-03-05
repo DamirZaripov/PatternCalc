@@ -8,7 +8,11 @@
 
 import Foundation
 
+/// Calculation result
+///
+/// - success: successful execution
+/// - failure: failure execution
 enum CalculatorResult{
-    case Success(Double)
-    case Failure(String)
+    case success(with: String)
+    case failure(with: String)
 }

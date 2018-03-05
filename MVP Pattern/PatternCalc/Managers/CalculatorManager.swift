@@ -10,8 +10,7 @@ import Foundation
 
 class CalculatorManager: CalculatorManagerProtocol {
     
-    
-    func toCount(with operation: SingleOperation) -> Double? {
+    func calculate(with operation: SingleOperation) -> Double? {
         var result = Double()
         
         guard let operationTitle = operation.singleOperation, let value = operation.value  else { return nil }
@@ -24,7 +23,7 @@ class CalculatorManager: CalculatorManagerProtocol {
         return result
     }
     
-    func toCount(with operation: MultiplayOperation) -> Double? {
+    func calculate(with operation: MultiplayOperation) -> Double? {
         var result = Double()
         
         guard let operationTitle = operation.multiplayOperation, let firstValue = operation.firstValue, let secondValue = operation.secondValue else { return nil }

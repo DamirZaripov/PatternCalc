@@ -8,6 +8,11 @@
 
 import Foundation
 
-protocol CalсulatorViewInput: class{
+/// Input protocol for Calculator View
+protocol CalсulatorViewInput: class {
+    
+    /// Set number to display
+    ///
+    /// - Parameter text: number
     func setTextToDigitsLabel(text: String)
 }

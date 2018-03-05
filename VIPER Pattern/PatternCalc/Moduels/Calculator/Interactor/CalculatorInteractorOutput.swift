@@ -8,8 +8,30 @@
 
 import Foundation
 
+/// Output protocol for Calculator Interactor
 protocol CalculatorInteractorOutput: class{
-    func didFinishToCountSingleOperation(with result: Double)
+    /// End of work of the Interacor's method
+    ///
+    /// - Parameter result: result of method
+    func didFinishToCountSingleOperation(with result: String)
+    
+    /// End of work of the Interacor's method
+    ///
+    /// - Parameter result: result of method
     func didFinishToCountMuptiplayOperation(with result: CalculatorResult)
-    func didFinishToSetMultiplayOperation()
+    
+    /// End of work of the Interacor's method
+    ///
+    /// - Parameter result: result of method
+    func didFinishedProcessingOfClickDigitButton(with result: String)
+    
+    /// End of work of the Interacor's method
+    ///
+    /// - Parameter result: result of method
+    func didFinishedProcessingOfClearButton(with result: String)
+    
+    /// End of work of the Interacor's method
+    ///
+    /// - Parameter result: result of method
+    func didFinishedProcessingOfCommaButton(with result: String)
 }

@@ -14,7 +14,7 @@
 		7C6012CE20404186003B6D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6012CD20404186003B6D88 /* Assets.xcassets */; };
 		7C6012D120404186003B6D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6012CF20404186003B6D88 /* LaunchScreen.storyboard */; };
 		FF8D0B7C20418AAA00C6AE81 /* SingleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D0B7B20418AAA00C6AE81 /* SingleOperation.swift */; };
-		FF8D0B7E20418CEA00C6AE81 /* CalculatorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D0B7D20418CEA00C6AE81 /* CalculatorRouter.swift */; };
+		FF8D0B7E20418CEA00C6AE81 /* CalculatorСonfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D0B7D20418CEA00C6AE81 /* CalculatorСonfigurator.swift */; };
 		FF8D0B822042023E00C6AE81 /* CalculatorViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D0B812042023E00C6AE81 /* CalculatorViewPresenter.swift */; };
 		FF8D0B842042030000C6AE81 /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D0B832042030000C6AE81 /* CalculatorPresenter.swift */; };
 		FF8D0B882042B5C500C6AE81 /* CalсulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D0B872042B5C500C6AE81 /* CalсulatorView.swift */; };
@@ -33,7 +33,7 @@
 		7C6012D020404186003B6D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C6012D220404186003B6D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8D0B7B20418AAA00C6AE81 /* SingleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOperation.swift; sourceTree = "<group>"; };
-		FF8D0B7D20418CEA00C6AE81 /* CalculatorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorRouter.swift; sourceTree = "<group>"; };
+		FF8D0B7D20418CEA00C6AE81 /* CalculatorСonfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorСonfigurator.swift"; sourceTree = "<group>"; };
 		FF8D0B812042023E00C6AE81 /* CalculatorViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewPresenter.swift; sourceTree = "<group>"; };
 		FF8D0B832042030000C6AE81 /* CalculatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
 		FF8D0B872042B5C500C6AE81 /* CalсulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalсulatorView.swift"; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				7C6012C720404186003B6D88 /* Main.storyboard */,
 				7C6012D220404186003B6D88 /* Info.plist */,
 				FF8D0B8B2042CBC500C6AE81 /* Managers */,
-				FF8D0B7A2041889700C6AE81 /* Router */,
+				FF8D0B7A2041889700C6AE81 /* Сonfigurator */,
 				FF8D0B772041882A00C6AE81 /* Model */,
 				FF8D0B792041885F00C6AE81 /* Presenter */,
 				FF8D0B782041883800C6AE81 /* View */,
@@ -114,12 +114,12 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		FF8D0B7A2041889700C6AE81 /* Router */ = {
+		FF8D0B7A2041889700C6AE81 /* Сonfigurator */ = {
 			isa = PBXGroup;
 			children = (
-				FF8D0B7D20418CEA00C6AE81 /* CalculatorRouter.swift */,
+				FF8D0B7D20418CEA00C6AE81 /* CalculatorСonfigurator.swift */,
 			);
-			path = Router;
+			path = "Сonfigurator";
 			sourceTree = "<group>";
 		};
 		FF8D0B8B2042CBC500C6AE81 /* Managers */ = {
@@ -205,7 +205,7 @@
 			files = (
 				FF8D0B822042023E00C6AE81 /* CalculatorViewPresenter.swift in Sources */,
 				7C6012C620404186003B6D88 /* CalculatorViewController.swift in Sources */,
-				FF8D0B7E20418CEA00C6AE81 /* CalculatorRouter.swift in Sources */,
+				FF8D0B7E20418CEA00C6AE81 /* CalculatorСonfigurator.swift in Sources */,
 				7C6012CC20404186003B6D88 /* PatternCalc.xcdatamodeld in Sources */,
 				FF8D0B912042D0CF00C6AE81 /* CalculatorManagerProtocol.swift in Sources */,
 				7C6012C420404186003B6D88 /* AppDelegate.swift in Sources */,

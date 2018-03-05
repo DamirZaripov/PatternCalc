@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-protocol AlertsFactoryProtocol: class{
+protocol AlertsFactoryProtocol: class {
     func getErrorAlert(with message: String) -> UIViewController
 }

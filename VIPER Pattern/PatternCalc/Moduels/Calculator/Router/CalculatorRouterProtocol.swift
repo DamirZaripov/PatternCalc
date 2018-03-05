@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
-protocol CalculatorRouterProtocol: class{
-    func showAlert(alert: UIViewController)
+/// Protocol for Calculator Router
+protocol CalculatorRouterProtocol: class {
+    
+    /// Show error allert
+    ///
+    /// - Parameter message: error message
+    func showErrorAlert(with message: String)
 }
