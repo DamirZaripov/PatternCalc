@@ -13,8 +13,8 @@ class CalculatorConfigurator {
     
     static func setupModule() -> CalculatorViewController? {
         
-        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calculatorView") as! CalculatorViewController
-        
+        let viewController: CalculatorViewController = UIStoryboard(storyboard: .main).instantiateViewController()
+
         let presenter = CalculatorPresenter()
         let iteractor = CalculatorInteractor()
         let router = CalculatorRouter()

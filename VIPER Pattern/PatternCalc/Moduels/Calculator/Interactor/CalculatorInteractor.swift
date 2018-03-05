@@ -126,7 +126,7 @@ class CalculatorInteractor: CalсulatorInteractorInput{
     func formatNumber(value: Double) -> String {
         let isInteger = value.truncatingRemainder(dividingBy: 1) == 0
         if (isInteger) {
-            return String(Int(value))
+            return String(Double(value))
         } else {
             return toReplacmentPointToComma(from: value)
         }
